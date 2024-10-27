@@ -5,13 +5,17 @@ import ViewShortcuts from './components/ViewShortcuts';
 
 function App() {
   return (
+
     <Router>
+      <h1> Hello Woel</h1>
       <Routes>
         <Route path="/" element={<Navigate replace to="/add" />} />
         <Route path="/add" element={<AddShortcut />} />
         <Route path="/view" element={<ViewShortcuts />} />
       </Routes>
     </Router>
+
+    
   );
 }
 
